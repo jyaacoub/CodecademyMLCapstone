@@ -1,0 +1,73 @@
+Columns:
+
+Continuous:
+    No parsing needed (already a number):
+        'age',
+    Needs parsing:
+        'height' (inches) : nan is na
+        'income' : -1 is na 
+        'last_online': in the format of YYYY-MM-DD
+        
+discrete:
+    'status' : ['single' 'available' 'seeing someone' 'married' 'unknown']
+    'smokes' : ['sometimes' 'no' nan 'when drinking' 'yes' 'trying to quit']
+    'sex' : ['m','f'] 
+    'orientation' : ['straight' 'bisexual' 'gay']
+    'drugs' : ['never' 'sometimes' nan 'often']
+    'drinks : ['socially' 'often' 'not at all' 'rarely' nan 'very often' 'desperately']
+    'body_type' : ['a little extra' 'average' 'thin' 'athletic' 'fit' nan 'skinny' 'curvy'
+                 'full figured' 'jacked' 'rather not say' 'used up' 'overweight']
+
+Multiple Choice:
+    'job' : ['transportation' 'hospitality / travel' nan 'student'
+             'artistic / musical / writer' 'computer / hardware / software'
+             'banking / financial / real estate' 'entertainment / media'
+             'sales / marketing / biz dev' 'other' 'medicine / health'
+             'science / tech / engineering' 'executive / management'
+             'education / academia' 'clerical / administrative'
+             'construction / craftsmanship' 'rather not say' 'political / government'
+             'law / legal services' 'unemployed' 'military' 'retired']
+    'pets' : ['likes dogs and likes cats' 'has cats' 'likes cats' nan
+             'has dogs and likes cats' 'likes dogs and has cats'
+             'likes dogs and dislikes cats' 'has dogs' 'has dogs and dislikes cats'
+             'likes dogs' 'has dogs and has cats' 'dislikes dogs and has cats'
+             'dislikes dogs and dislikes cats' 'dislikes cats'
+             'dislikes dogs and likes cats' 'dislikes dogs']
+    'offspring' : ['doesn&rsquo;t have kids, but might want them' nan
+                 'doesn&rsquo;t want kids' 'doesn&rsquo;t have kids, but wants them'
+                 'doesn&rsquo;t have kids' 'wants kids' 'has a kid' 'has kids'
+                 'doesn&rsquo;t have kids, and doesn&rsquo;t want any'
+                 'has kids, but doesn&rsquo;t want more'
+                 'has a kid, but doesn&rsquo;t want more' 'has a kid, and wants more'
+                 'has kids, and might want more' 'might want kids'
+                 'has a kid, and might want more' 'has kids, and wants more']
+    'education' : ['working on college/university' 'working on space camp'
+                 'graduated from masters program' 'graduated from college/university'
+                 'working on two-year college' nan 'graduated from high school'
+                 'working on masters program' 'graduated from space camp'
+                 'college/university' 'dropped out of space camp'
+                 'graduated from ph.d program' 'graduated from law school'
+                 'working on ph.d program' 'two-year college'
+                 'graduated from two-year college' 'working on med school'
+                 'dropped out of college/university' 'space camp'
+                 'graduated from med school' 'dropped out of high school'
+                 'working on high school' 'masters program' 'dropped out of ph.d program'
+                 'dropped out of two-year college' 'dropped out of med school'
+                 'high school' 'working on law school' 'law school'
+                 'dropped out of masters program' 'ph.d program'
+                 'dropped out of law school' 'med school']
+    'diet : ['strictly anything' 'mostly other' 'anything' 'vegetarian' nan
+             'mostly anything' 'mostly vegetarian' 'strictly vegan'
+             'strictly vegetarian' 'mostly vegan' 'strictly other' 'mostly halal'
+             'other' 'vegan' 'mostly kosher' 'strictly halal' 'halal'
+             'strictly kosher' 'kosher']
+             
+Non restrictive multiple choice:
+    'speaks' : a list of all the languages they know (in the format of "<language> (<how well known>)")
+    'sign' : in the format of "<sign> <matters or not>"
+    'religion' : <religion> <how religious>
+    'location' : cities in the US (mostly cali)
+    'ethnicity' : list of ethnicity that they belong to (ex: asian, black, pacific islander)
+
+short Answer:
+    'essay0','essay1', ..., 'essay9'
